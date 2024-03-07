@@ -1,0 +1,50 @@
+/* flex _box */
+
+
+body{
+    display: flex;  
+    flex-wrap: wrap;                                           /* .sidebar, .footer saut de ligne si il d"passe la taille du containere  */
+}
+
+.header ,.footer {
+   
+    flex-basis: 100%;                                          /* width: 100% are equal *********media query*/
+   
+}
+
+
+.sidebar{
+    flex-basis: 25%;  
+
+ }
+ .content{
+    flex-basis: 50%;  
+ }
+
+@media screen  and (max-width: 750px) {
+    
+   .content{
+    flex-basis: 100%;
+   }
+   .sidebar{
+    flex-basis: 50%;  
+    order: 1;
+   }
+    .footer {
+    flex-basis: 100%;  
+    order: 3;
+   } 
+
+ }
+ @media screen  and (max-width: 425px) {
+    
+   
+    .sidebar{
+     flex-basis: 100%;  
+    
+    }
+   
+ 
+  }
+
+

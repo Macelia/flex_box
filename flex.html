@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initialisation_flex_box</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .flex_container{
+            background-color: aqua;
+            height: 200px;
+            display: flex;                                   /*    flex: a gauche ----------- droite */
+            flex-direction: row;                            /*    row_reverse :      comme,ce par la droite */
+            justify-content: space-between ;               /*     center  ; flex-end*; space-around; space-between ;space evently   main axes
+                                                                                          alignement horizentale            */
+             
+            
+            align-items: baseline;                             /* alignement vertical  ******ne prend pas la totalité  de la largeur du container contairement justify content cross axis  */
+                                                               /* ____baseline_____ aligne les elements selon leurs ligne de base  */
+        } 
+        .flex_container div{
+            background-color: white;
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;    /*l'espqcement  entre les lignes */
+            font-size:  30px; 
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1> Flex _box _css </h1>
+    <p> 
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Tempora id eos sapiente 
+           officia at nostrum sequi perferendis molestias neque explicabo rem aspernatur 
+           quidem praesentium, cupiditate quas laudantium consectetur, error veritatis.
+    </p>
+    <div class="flex_container">
+        <div >
+                     <h1>1</h1>  
+        </div>
+        <div >
+                      <h5>2</h5> 
+        </div>
+         <div >
+                    <h6>3</h6>
+         </div>
+
+
+
+
+    </div>
+ 
+</body>
+</html>
